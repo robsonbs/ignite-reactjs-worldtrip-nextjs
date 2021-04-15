@@ -1,16 +1,15 @@
+import { Flex } from '@chakra-ui/react'
 import Head from 'next/head'
-import { Banner } from '../omponents/Banner'
-import { Header } from '../omponents/Header'
+import { Banner } from '../components/Banner'
 
 export default function Home() {
   return (
-    <div>
+    <Flex direction="column">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Home | Worldtrip</title>
       </Head>
-      <Header />
+
       <Banner />
-    </div>
+    </Flex>
   )
 }
