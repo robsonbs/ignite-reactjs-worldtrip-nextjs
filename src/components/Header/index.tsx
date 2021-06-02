@@ -1,4 +1,5 @@
-import { Flex, Grid, Icon, IconButton, Image, Link } from '@chakra-ui/react'
+import Link from 'next/link'
+import { Flex, Grid, Icon, IconButton, Image, Link as ChakraLink } from '@chakra-ui/react'
 import { useRouter } from 'next/dist/client/router'
 import { FiChevronLeft } from 'react-icons/fi'
 
@@ -36,10 +37,12 @@ export function Header() {
             onClick={() => back()}
           />
         )}
-
-        <Link justifySelf="center" gridColumn="2">
-          <Image src="/img/logo.svg" alt="Worldtrip" />
+        <Link href="/" passHref>
+          <ChakraLink justifySelf="center" gridColumn="2">
+            <Image src="/img/logo.svg" alt="Worldtrip" />
+          </ChakraLink>
         </Link>
+
       </Grid>
     </Flex>
   )

@@ -5,8 +5,7 @@ import {
   Flex,
   Heading,
   Image,
-  Text,
-  Link as ChakraLink
+  Text
 } from '@chakra-ui/react'
 import SwiperCore, { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
